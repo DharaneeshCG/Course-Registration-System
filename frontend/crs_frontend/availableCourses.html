@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type = "text/javascript" src = "script.js"></script>
+
+    <style>
+        body{
+            background: linear-gradient(to right, skyblue, white);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        td{
+            background-color: #909799;
+        }
+        body{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table align = "center" border="1" width = "600" height = "350">
+        <tr align = "center" style = "background-color: #595d5e">
+            <th width = "100">Course id</th>
+            <th width = "100">Course name</th>
+            <th width = "100">Trainer</th>
+            <th width = "100">Duration in weeks</th>
+        </tr>
+        <tbody align="center" id = "coursetable"></tbody>
+    </table>
+    <script type = "text/javascript">
+        window.onload = function(){
+            showCourses();
+        }
+    </script>
+</body>
+</html>

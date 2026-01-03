@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+
+    <style>
+        body {
+            background-color: rgb(250, 245, 245);
+            text-align: center;
+
+            background: linear-gradient(to right, skyblue, white);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        form {
+            margin: auto;
+            padding: 20px;
+            width: 400px;
+            background-color: #fff;
+        }
+
+        input, select, button {
+            width: 30%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #08084e;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            font-weight: bold;
+            font-size: medium;
+            cursor: pointer;  
+            size: 1px;  
+        }
+
+        button:hover {
+            background-color: #1d2fd5;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 style = "color:rgb(2, 53, 53)">Kick start with an exicting course</h2>
+    
+    <form action = "http://localhost:8080/courses/register" method="post">
+        <label for = "name">Enter your name </label>
+        <input type = "text" name = "name" required><br><br>
+    
+        <label for = "email">Enter your email </label>
+        <input type = "text" name = "email" required><br><br>
+
+        <label for = "courseName">Choose a Course </label>
+        <select id = "course" name = "courseName" required>
+            <option value = "Java"> Java </option>
+            <option value = "Object Oriented Programming"> Object Oriented Programming </option>
+            <option value = "SQL"> SQL </option>
+            <option value = "AI"> AI</option>
+        </select><br><br>
+
+        <button type = "submit"> Submit </button>
+    </form>
+</body>
+</html>
